@@ -142,7 +142,7 @@ margin-bottom: 15px;
 }
 #product-img {
   height: 600px;
-  background-image: url(images/hero_iphone_13pro.jpg);
+  background-image: url ("images/hero_iphone_13pro.jpg");
   background-position: center;
   margin-top: -170px;
 }
