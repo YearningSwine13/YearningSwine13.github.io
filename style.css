@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
+/*               End of Setup             */
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+body {
+
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+/* Nav Bar */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.col-1 {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+header {
+padding: 12px 0;
+background-color: black;
+}
+/* Hero */
+#product-info {
+  text-align: center;
+  padding-top: 40px;
+}
+#product-info h1 {
+font-size: 50px;
+margin-bottom: 15px;
+}
+#product-info h2 {
+ font-size: 30px;
+ padding-bottom: 15px;
+}
+#product-info h3 a {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 12px;
+}
+#product-img {
+  height: 600px;
+  background-image: url(images/hero_iphone_13pro.jpg);
+  background-position: center;
+  margin-top: -170px;
+}
+/* sub-hero */
+.col-3 {
+  display: inline-block;
+  width: 25%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+#img-1 {
+  background-image: url(images/watch_large.jpg);
+}
+#img-2 {
+  background-image: url(images/ipad_pro_large.jpg);
+}
+#img-3 {
+  background-image: url(images/accessories_large.jpg);
+}
+#img-4 {
+  background-image: url(images/macbook_large.jpg);
+}
+.recall {
+  text-align: center;
+  margin: 20px 0;
+}
+.recall a {
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+}
+/* footer */
+footer {
+  background-color: rgb(235, 234, 234);
+  padding-bottom: 20px;
+}
+.col {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer .container .col li {
+  padding: 5px 0;
+}
+footer .container .col a {
+  text-decoration: none;
+}
+footer .container .col .bold {
+  font-weight: bold;
+}
+#anchor-link-1 {
+  border-bottom: 1px solid lightgray;
+  font-weight: lighter;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+#anchor-link-1 a {
+  text-decoration: none;
+  color: blue;
+  font-weight: normal;
+}
+#anchor-link-2 {
+  font-weight: lighter;
+  font-size: 12px;
+  padding: 5px 0;
+}
+#anchor-link-2 div {
+  display: inline-block;
+}
+#anchor-link-2 div a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+#anchor-link-2 .legal {
+  font-weight: normal;
+}
+#anchor-link-2 #usa {
+  float: right;
+}
